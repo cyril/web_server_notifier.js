@@ -14,5 +14,5 @@
   },
   "name": "Web Server Notifier",
   "permissions": [ "http://*/*", "https://*/*", "tabs" ],
-  "version": "1.4.3"
+  "version": "1.4.4"
 }

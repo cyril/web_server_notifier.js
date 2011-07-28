@@ -14,7 +14,7 @@ code {
 function main() {
   chrome.tabs.getSelected(null, function(tab) {
     var banner = chrome.extension.getBackgroundPage().serverData[tab.id];
-    document.getElementById("banner").innerHTML = banner;
+    document.getElementById("banner").innerText = banner;
   });
 }
 </script>
