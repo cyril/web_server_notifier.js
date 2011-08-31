@@ -176,6 +176,11 @@ var web_servers = [
     "regex": "^wg_httpd.*"
   },
   {
+    "icon": "play_framework.png",
+    "title": "Play! Framework",
+    "regex": "^Play.*"
+  },
+  {
     "icon": "qnap.gif",
     "title": "QNAP",
     "regex": "^http server.*"
