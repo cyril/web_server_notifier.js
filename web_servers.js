@@ -55,6 +55,11 @@ var web_servers = [
     "regex": "^Virata.*"
   },
   {
+    "icon": "cloudflare.ico",
+    "title": "Cloudflare Nginx",
+    "regex": "^cloudflare-nginx.*"
+  },
+  {
     "icon": "flexwatch.gif",
     "title": "FlexWATCH",
     "regex": "^GoAhead.*"
