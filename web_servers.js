@@ -50,6 +50,11 @@ var web_servers = [
     "regex": "^Cherokee.*"
   },
   {
+    "icon": "cherrypy.ico",
+    "title": "CherryPy",
+    "regex": "^CherryPy.*"
+  },
+  {
     "icon": "cisco.gif",
     "title": "Cisco",
     "regex": "^Virata.*"
@@ -68,6 +73,11 @@ var web_servers = [
     "icon": "gatling.gif",
     "title": "Gatling",
     "regex": "^Gatling.*"
+  },
+  {
+    "icon": "github.ico",
+    "title": "GitHub.com",
+    "regex": "^GitHub.com.*"
   },
   {
     "icon": "hiawatha.gif",
@@ -229,6 +239,11 @@ var web_servers = [
     "icon": "tclhttpd.gif",
     "title": "TclHttpd",
     "regex": "^Tcl-Webserver.*"
+  },
+  {
+    "icon": "twitter.ico",
+    "title": "tfe",
+    "regex": "^tfe.*"
   },
   {
     "icon": "userland.gif",
