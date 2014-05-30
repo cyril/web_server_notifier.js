@@ -2,7 +2,7 @@
   "manifest_version": 2,
 
   "name": "Web Server Notifier",
-  "version": "1.5.1",
+  "version": "1.5.2",
 
   "description": "Displays the Web server of the current page.",
   "icons": {
@@ -10,22 +10,17 @@
   },
 
   "permissions": [
-    "http://*/*",
-    "tabs"
+    "http://*/*"
   ],
 
   "content_scripts": [
     {
       "js": [ "web_server_notifier.js" ],
-      "matches": [
-        "http://*/*"
-      ],
+      "matches": [ "http://*/*" ],
       "run_at": "document_start"
     }
   ],
-  "page_action": {
-    "popup": "popup.html"
-  },
+  "page_action": {},
 
   "author": "Cyril Wack",
 
