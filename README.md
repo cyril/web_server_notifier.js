@@ -12,4 +12,6 @@ Philosophy
 
 Being a general extension that does only one thing, without any feature.
 
-Copyright (c) 2010-2013 Cyril Wack, released under the MIT license
+* * *
+
+Copyright (c) 2010-2014 Cyril Wack, released under the [MIT license](LICENSE.md)
