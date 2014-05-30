@@ -1,7 +1,7 @@
 const request = "Server";
 
 var client = new XMLHttpRequest();
-client.open("GET", document.location.pathname, true);
+client.open("HEAD", document.location.pathname, true);
 client.send();
 client.onreadystatechange = function() {
   if (this.readyState == 2) {

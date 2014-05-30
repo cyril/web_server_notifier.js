@@ -2,7 +2,7 @@
   "manifest_version": 2,
 
   "name": "Web Server Notifier",
-  "version": "1.4.8",
+  "version": "1.5.0",
 
   "description": "Displays the Web server of the current page.",
   "icons": {
