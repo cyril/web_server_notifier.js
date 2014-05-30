@@ -2,7 +2,7 @@
   "manifest_version": 2,
 
   "name": "Web Server Notifier",
-  "version": "1.5.0",
+  "version": "1.5.1",
 
   "description": "Displays the Web server of the current page.",
   "icons": {
@@ -11,7 +11,6 @@
 
   "permissions": [
     "http://*/*",
-    "https://*/*",
     "tabs"
   ],
 
@@ -19,8 +18,7 @@
     {
       "js": [ "web_server_notifier.js" ],
       "matches": [
-        "http://*/*",
-        "https://*/*"
+        "http://*/*"
       ],
       "run_at": "document_start"
     }
