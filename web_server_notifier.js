@@ -6,6 +6,6 @@ client.send();
 client.onreadystatechange = function() {
   if (this.readyState == 2) {
     var data = this.getResponseHeader(request);
-    if (data) chrome.extension.sendRequest(data);
+    if (data) chrome.extension.sendMessage(data);
   }
 }

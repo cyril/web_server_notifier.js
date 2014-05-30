@@ -1,18 +1,43 @@
 {
-  "background_page": "background.html",
-  "content_scripts": [ {
-    "js": ["web_server_notifier.js"],
-    "matches": [ "http://*/*", "https://*/*" ],
-    "run_at": "document_start"
-  } ],
+  "manifest_version": 2,
+
+  "name": "Web Server Notifier",
+  "version": "1.4.8",
+
   "description": "Displays the Web server of the current page.",
   "icons": {
     "128": "web_server_notifier-128x128.png"
   },
+
+  "permissions": [
+    "http://*/*",
+    "https://*/*",
+    "tabs"
+  ],
+
+  "content_scripts": [
+    {
+      "js": [ "web_server_notifier.js" ],
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "run_at": "document_start"
+    }
+  ],
   "page_action": {
     "popup": "popup.html"
   },
-  "name": "Web Server Notifier",
-  "permissions": [ "http://*/*", "https://*/*", "tabs" ],
-  "version": "1.4.7"
+
+  "author": "Cyril Wack",
+
+  "background": {
+    "scripts": [
+      "web_servers.js",
+      "event_page.js"
+    ],
+    "persistent": false
+  },
+
+  "short_name": "Web Server"
 }

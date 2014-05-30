@@ -1,10 +1,6 @@
-<html>
-<head>
-<script type="text/javascript" src="./web_servers.js"></script>
-<script type="text/javascript">
 var serverData = {};
 
-chrome.extension.onRequest.addListener(function(banner, sender) {
+chrome.extension.onMessage.addListener(function(banner, sender) {
   serverData[sender.tab.id] = banner;
 
   var alt = "Unrecognized server";
@@ -25,6 +21,3 @@ chrome.extension.onRequest.addListener(function(banner, sender) {
 chrome.tabs.onRemoved.addListener(function(tabId) {
   delete serverData[tabId];
 });
-</script>
-</head>
-</html>
